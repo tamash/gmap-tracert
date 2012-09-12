@@ -1,0 +1,8 @@
+Script:Russcom.TraceRoute
+Author:Artem Kalinchuk
+Website:http://www.russcom.org
+
+--------------------------------------------------
+Thank you for downloading russcom.TraceRoute. Everything is set up for the default. If you are an experienced coder, you can probably change some stuff around in the file. 
+--------------------------------------------------
+If you have any questions, visit www.russcom.org forum.

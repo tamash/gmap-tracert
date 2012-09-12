@@ -1,0 +1,28 @@
+<script type="text/javascript">
+var ms = 0;
+var ms_todisplay = 0;
+var sec = 0;
+var perc = 0;
+
+var start = new Date().getTime();
+setInterval("timeout()",100);
+
+function timeout(){
+ms += 100;
+ms_todisplay += 0.1;
+
+if(ms%60000=="0"){
+	perc += 1;
+	sec = 0;
+	ms = 0;
+}
+if(ms%1000=="0"){
+	sec += 1;
+	ms_todisplay = 0;
+}
+
+var elapsed = new Date().getTime() - start;
+document.getElementById('timerlabel').innerHTML = perc+":"+(sec+ms_todisplay).toFixed(1);
+}
+</script>
+<label id="timerlabel"></label>
